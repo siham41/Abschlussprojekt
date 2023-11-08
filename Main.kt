@@ -32,7 +32,7 @@ fun kampf(angreifer: Helden, verteidiger: Gegner){
     println("${angreifer.name} greift ${verteidiger.name} an und versucht $angreiferschaden Schaden")
     }else{
         angreifer.aktualisiereHp(verteidigerSchaden)
-    println("${verteidiger.name} greift ${angreifer.name} an und versucht $verteidigerAktion")
+    println("${verteidiger.name} greift ${angreifer.name} an und versucht $verteidigerSchaden Sachden")
     }
 }
 
