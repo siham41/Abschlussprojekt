@@ -1,9 +1,10 @@
 # Abschlussprojekt
 
 
-Dieses Spiel simuliert einen Kampf zwischen zwei Teams von Helden und Kriegern.
+#Ein einfaches Kampfspiel in Kotlin
+#Dieses Spiel simuliert einen Kampf zwischen zwei Teams von Helden und Kriegern.
 
-*Klassen
+#Klassen
 Charakter ist die Basisklasse für alle Charaktere im Spiel. Sie enthält die folgenden Attribute:
 
 -name: Der Name des Charakters
@@ -18,9 +19,9 @@ Charakter ist die Basisklasse für alle Charaktere im Spiel. Sie enthält die fo
 
 -ruestung: Die Rüstung des Charakters
 
--Held und Krieger sind abgeleitete Klassen von Charakter. Sie unterscheiden sich in ihren Grundwerten und Aktionen.
+#Held und Krieger sind abgeleitete Klassen von Charakter. Sie unterscheiden sich in ihren Grundwerten und Aktionen.
 
-*Aktion ist eine Klasse, die eine Aktion eines Charakters beschreibt. Sie enthält die folgenden Attribute:
+#Aktion ist eine Klasse, die eine Aktion eines Charakters beschreibt. Sie enthält die folgenden Attribute:
 
 -name: Der Name der Aktion
 
@@ -28,7 +29,15 @@ Charakter ist die Basisklasse für alle Charaktere im Spiel. Sie enthält die fo
 
 -beschreibung: Eine Beschreibung der Aktion
 
--Funktionen
+-Beutel ist eine Klasse, die einen Beutel mit Heiltränken und Vitaminen enthält. Sie enthält die folgenden Attribute:
+
+-heiltrankAnzahl: Die Anzahl der Heiltränke im Beutel
+
+-vitamineAnzahl: Die Anzahl der Vitamine im Beutel
+
+-Unterboss ist eine Klasse, die einen Unterboss beschreibt. Sie ist eine abgeleitete Klasse von Aktion.
+
+#Funktionen
 kampf() simuliert einen Kampf zwischen zwei Charakteren.
 
 -berechneSchaden() berechnet den Schaden, den eine Aktion verursacht.
