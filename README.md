@@ -17,7 +17,7 @@ Die `Charakter`-Klasse repräsentiert die Basis für alle Charaktere im Spiel. S
 
 Die `Aktion`-Klasse beschreibt eine mögliche Handlung eines Charakters. Sie enthält Attribute wie `name`, `schaden` und `beschreibung`.
 
-### Held
+### Helden
 
 Die `Held`-Klasse ist eine abgeleitete Klasse von `Charakter` und stellt einen Helden dar. Sie enthält spezifische Aktionen und Attribute für Helden.
 
