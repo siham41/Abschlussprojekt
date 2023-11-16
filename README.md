@@ -1,51 +1,88 @@
 # Abschlussprojekt
 
 
-#Ein einfaches Kampfspiel in Kotlin
-#Dieses Spiel simuliert einen Kampf zwischen zwei Teams von Helden und Kriegern.
 
-#Klassen
-Charakter ist die Basisklasse für alle Charaktere im Spiel. Sie enthält die folgenden Attribute:
+Dieses Projekt implementiert ein einfaches Kampfspiel in Kotlin, bei dem Helden und Krieger in einem rundenbasierten System gegen Endgegner und Unterbosse antreten.
 
--name: Der Name des Charakters
+## Klassen
 
--hp: Die Lebenspunkte des Charakters
+### Charakter
 
--aktionen: Eine Liste von Aktionen, die der Charakter ausführen kann
+Die `Charakter`-Klasse repräsentiert die Basis für alle Charaktere im Spiel. Sie enthält Attribute wie `name`, `hp` (Lebenspunkte), `aktionen` (Liste von Aktionen), `grundschaden`, `schnelligkeit` und `ruestung`.
 
--grundschaden: Der Grundschaden des Charakters
+### Aktion
 
--schnelligkeit: Die Geschwindigkeit des Charakters
+Die `Aktion`-Klasse beschreibt eine mögliche Handlung eines Charakters. Sie enthält Attribute wie `name`, `schaden` und `beschreibung`.
 
--ruestung: Die Rüstung des Charakters
+### Held
 
-#Held und Krieger sind abgeleitete Klassen von Charakter. Sie unterscheiden sich in ihren Grundwerten und Aktionen.
+Die `Held`-Klasse ist eine abgeleitete Klasse von `Charakter` und stellt einen Helden dar. Sie enthält spezifische Aktionen und Attribute für Helden.
 
-#Aktion ist eine Klasse, die eine Aktion eines Charakters beschreibt. Sie enthält die folgenden Attribute:
+### Krieger
 
--name: Der Name der Aktion
+Die `Krieger`-Klasse ist eine abgeleitete Klasse von `Charakter` und stellt einen Krieger dar. Sie enthält spezifische Aktionen und Attribute für Krieger.
 
--schaden: Der Schaden, den die Aktion verursacht
+### HeldMagier
 
--beschreibung: Eine Beschreibung der Aktion
+Die `HeldMagier`-Klasse ist eine abgeleitete Klasse von `Held` und stellt einen magischen Helden dar. Sie enthält spezifische Aktionen und Attribute für magische Helden.
 
--Beutel ist eine Klasse, die einen Beutel mit Heiltränken und Vitaminen enthält. Sie enthält die folgenden Attribute:
+### HeldKrieger
 
--heiltrankAnzahl: Die Anzahl der Heiltränke im Beutel
+Die `HeldKrieger`-Klasse ist eine abgeleitete Klasse von `Held` und stellt einen kriegerischen Helden dar. Sie enthält spezifische Aktionen und Attribute für kriegerische Helden.
 
--vitamineAnzahl: Die Anzahl der Vitamine im Beutel
+### Beutel
 
--Unterboss ist eine Klasse, die einen Unterboss beschreibt. Sie ist eine abgeleitete Klasse von Aktion.
+Die `Beutel`-Klasse repräsentiert den Beutel eines Charakters mit Heiltränken und Vitaminen. Sie enthält Attribute wie `heiltrankAnzahl` und `vitamineAnzahl`.
 
-#Funktionen
-kampf() simuliert einen Kampf zwischen zwei Charakteren.
+### Endgegner
 
--berechneSchaden() berechnet den Schaden, den eine Aktion verursacht.
+Die `Endgegner`-Klasse ist eine abgeleitete Klasse von `Charakter` und stellt einen mächtigen Gegner dar. Sie enthält spezifische Aktionen und Attribute für Endgegner.
 
--handleSchaden() behandelt den Schaden, der einem Charakter zugefügt wurde.
+### Unterboss
 
--istKampfVorbei() überprüft, ob ein Kampf vorbei ist.
+Die `Unterboss`-Klasse ist eine abgeleitete Klasse von `Charakter` und stellt einen besonders starken Gegner dar. Sie enthält spezifische Aktionen und Attribute für Unterbosse.
 
--sindAlleTot() überprüft, ob alle Charaktere in einer Gruppe tot sind.
+## Funktionen
 
--ermitteleGewinner() ermittelt den Gewinner eines Kampfes.
+### kampf()
+
+Die `kampf()`-Funktion simuliert einen Kampf zwischen zwei Charakteren. Sie verwendet `berechneSchaden()`, `handleSchaden()`, `istKampfVorbei()` und `ermitteleGewinner()`.
+
+### berechneSchaden()
+
+Die `berechneSchaden()`-Funktion berechnet den Schaden, den eine Aktion verursacht.
+
+### handleSchaden()
+
+Die `handleSchaden()`-Funktion behandelt den erlittenen Schaden und aktualisiert die Lebenspunkte der Charaktere.
+
+### istKampfVorbei()
+
+Die `istKampfVorbei()`-Funktion überprüft, ob der Kampf vorbei ist, indem sie prüft, ob alle Charaktere tot sind.
+
+### ermitteleGewinner()
+
+Die `ermitteleGewinner()`-Funktion bestimmt den Gewinner des Kampfes.
+
+## Anwendung
+
+Die Anwendung findet sich in der `main()`-Funktion, wo Instanzen von Charakteren, Aktionen und Gegnern erstellt werden. Der Kampf wird gestartet und in Runden durchgeführt, bis ein Gewinner ermittelt wird.
+
+## Erweiterungen
+
+Das Projekt kann durch die Implementierung von zufälligen Aktionen, Heilung, Effekten, einer grafischen Benutzeroberfläche und Persistenz weiter verbessert werden.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
