@@ -1,7 +1,7 @@
 class Beutel {
     val heiltrankAnzahl: Int = 3
     val vitamineAnzahl: Int = 1
-    fun nutzeheiltrank(held: Helden){
+    fun nutzeheiltrank(held: Charakter){
         val heilung = held.hp / 2
         held.hp += heilung
         println("${held.name} verwendet einen Heiltrank und heilt sich um $heilung HP.")

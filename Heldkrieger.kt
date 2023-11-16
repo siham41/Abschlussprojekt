@@ -1,1 +1,4 @@
-class Heldkrieger(schaden: Int, beschreibung: String): Aktion(schaden, beschreibung)
+class HeldKrieger(name: String, hp: Int, grundschaden: Int, aktionen: List<Aktion>) : Charakter(name, hp, aktionen, grundschaden)
+
+
+

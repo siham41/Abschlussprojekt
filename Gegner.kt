@@ -1,26 +1,13 @@
+
+
 open class Gegner(
-    val name: String,
-    var hp: Int,
-    val aktionen: List<EndgegnerAktion>,
-    val grundschaden: Int = 50,
-    val schnelligkeit: Int = 10,
-    val ruestung: Int = 10
-
-    ) {
-
-
-    open fun  waeleAktion(): EndgegnerAktion {
-        return aktionen.random()
-    }
-    open  fun aktualisiereHp(schaden: Int) {
-
-        hp -= schaden
-    }
-    fun getSchaden(): Int{
-        return aktionen.map { it.schaden.toLong() }.sum().toInt() * grundschaden
-    }
-
-}
+    name: String,
+    hp: Int,
+    aktionen: List<Aktion>,
+    grundschaden: Int = 50,
+    schnelligkeit: Int = 10,
+    ruestung: Int = 10
+) : Charakter(name, hp, aktionen, grundschaden, schnelligkeit, ruestung)
 
 
 

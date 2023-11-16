@@ -1,3 +1,10 @@
-class HeldMagier(schaden: Int, beschreibung: String) : Aktion(schaden, beschreibung)
+class HeldMagier(name: String, hp: Int, grundschaden: Int, aktionen: List<Aktion>) : Charakter(name, hp, aktionen, grundschaden)
+
+
+
+
+
+
+
 
 

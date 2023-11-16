@@ -1,2 +1,1 @@
-class EndgegnerAktion(schaden: Int, beschreibung: String): Aktion(schaden, grundschaden = 0) {
-}
+class Endgegner(name: String, hp: Int, aktionen: List<Aktion>) : Gegner(name, hp, aktionen)
