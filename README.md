@@ -1,6 +1,10 @@
 # Abschlussprojekt
 
 <img width="870" alt="Bildschirmfoto 2023-11-16 um 21 04 15" src="https://github.com/siham41/Abschlussprojekt/assets/144682593/a15527e7-6dac-4a87-96e7-3c8f035297b1">
+
+
+
+
 Dieses Projekt implementiert ein einfaches Kampfspiel in Kotlin, bei dem Helden und Krieger in einem rundenbasierten System gegen Endgegner und Unterbosse antreten.
 
 ## Klassen
